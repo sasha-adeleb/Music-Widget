@@ -1,9 +1,8 @@
-// Designed by:  Mauricio Bucardo
-// Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
+
 
 "use strict";
 
-// add elemnts
+
 const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
 const body = document.body;
 const player = document.querySelector(".player");
@@ -32,7 +31,7 @@ const progres = player.querySelector(".progres");
 const progresFilled = progres.querySelector(".progres__filled");
 let isMove = false;
 
-// creat functions
+
 function openPlayer() {
 
     playerHeader.classList.add("open-header");
