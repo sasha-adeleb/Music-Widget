@@ -21,7 +21,7 @@ fieldset {
     border-style: solid double;
     border-color: chartreuse;
     height: 100%;
-  /* padding-bottom: 1000px; -- BORDER length -- */
+  
 }
 
 
@@ -38,7 +38,7 @@ legend{
   font-size: 50px;
 }
 
-.rowell{
+.metz{
   font-weight: bold;
   float: center;
   font-size: 40px;
@@ -57,70 +57,14 @@ p {
     color: chartreuse;
 }
 
-/* -------------- loading circle START-----------------*/
 
-.container {
-  margin: 5px;
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: .3vh;
-  background-color: none;
-  position: absolute;
-}
-.loader {
-  max-width: 3rem;
-  width: 80%;
-  height: auto;
-  stroke-linecap: round;
-}
 
-circle {
-  fill: none;
-  stroke-width: 20;
-  animation-name: preloader;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform-origin: 170px 170px;
-  will-change: transform;
-}
-circle:nth-of-type(1) {
-  stroke-dasharray: 550px;
-}
-circle:nth-of-type(2) {
-  stroke-dasharray: 500px;
-}
-circle:nth-of-type(3) {
-  stroke-dasharray: 450px;
-}
-circle:nth-of-type(4) {
-  stroke-dasharray: 300px;
-}
-circle:nth-of-type(1) {
-  animation-delay: -0.15s;
-}
-circle:nth-of-type(2) {
-  animation-delay: -0.3s;
-}
-circle:nth-of-type(3) {
-  animation-delay: -0.45s;
-}
-circle:nth-of-type(4) {
-  animation-delay: -0.6s;
-}
+
 @keyframes preloader {
   50% {
     transform: rotate(360deg);
   }
 }
-
-
-/* -------------- loading circle END ----------------- */
-
-
-
 
 #header {
     overflow: hidden;
@@ -130,9 +74,9 @@ circle:nth-of-type(4) {
 }
 
 
-/* -------------- NAVBAR BEGIN ---------------*/
 
-/* Add a black background color to the top navigation */
+
+
 .topnav {
   font-family: 'Montserrat', sans-serif;
   border: solid;
@@ -170,14 +114,6 @@ circle:nth-of-type(4) {
 }
 
 
-/* -------------- NAVBAR END------ -----------*/
-
-
-
-/* -------------- TYPEWRITER EFFECT -------------- */
-
-
-
 .typewriter p {
 
   margin-left: 30%;
@@ -199,19 +135,18 @@ circle:nth-of-type(4) {
   border-right: .5em solid transparent;
 }
 
-/* The typing effect */
+
 @keyframes typing {
   from { width: 0 }
   to { width: 400px; }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: chartreuse; }
 }
 
-/* -------------- END of TYPEWRITER EFFECT -------------- */
+
 
 #container {
     display: inline-block;
@@ -308,9 +243,6 @@ circle:nth-of-type(4) {
     }
 }
 
-
-/* -------------- Start of SCROLLBOX -------------- */
-
 .scroll_p {
     margin: 10px;
 }
@@ -353,16 +285,6 @@ circle:nth-of-type(4) {
 .scrollbox::-webkit-scrollbar-thumb:hover {
   background: chartreuse; 
 }
-
-/* -------------- End of SCROLLBOX -------------- */
-
-
-
-
-
-
-/* ---- cube---- */
-
 
 .scene--cube {
   width: 100px;     /*size*/
