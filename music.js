@@ -194,7 +194,7 @@ function durationSongs() {
 
 changeSliderContext();
 
-// add events
+
 sliderContext.addEventListener("click", openPlayer);
 sliderContext.addEventListener("animationend", () => sliderContext.style.animationName ='');
 playlistButton.addEventListener("click", closePlayer);
