@@ -24,7 +24,6 @@ fieldset {
   
 }
 
-
 .legend {
   margin-left: 25px;
   font-family: 'Libre Barcode 128 Text', cursive;
@@ -57,9 +56,6 @@ p {
     color: chartreuse;
 }
 
-
-
-
 @keyframes preloader {
   50% {
     transform: rotate(360deg);
@@ -73,10 +69,6 @@ p {
     font-weight: bold;
 }
 
-
-
-
-
 .topnav {
   font-family: 'Montserrat', sans-serif;
   border: solid;
@@ -88,7 +80,6 @@ p {
   text-align: center;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   border-color: chartreuse;
   float: center;
@@ -100,14 +91,12 @@ p {
   font-size: 16px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   border: dotted 3px;
   background-color: black;
   color: chartreuse;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   color: black;
   background-color: chartreuse;
@@ -117,21 +106,13 @@ p {
 .typewriter p {
 
   margin-left: 30%;
-  
   position: absolute;
-        
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-    
-  border-right: .5em solid chartreuse; /* The typwriter cursor */
-    
-  white-space: nowrap; /* Keeps the content on a single line while typing */
-    
-  margin: 10 auto; /* Gives that scrolling effect as the typing happens */
-    
-  letter-spacing: .15em; /* Adjust as needed */
-    
+  overflow: hidden; 
+  border-right: .5em solid chartreuse; 
+  white-space: nowrap; 
+  margin: 10 auto; 
+  letter-spacing: .15em; 
   animation: typing 4s steps(30, end), blink-caret .75s step-end infinite, transparent;
-  
   border-right: .5em solid transparent;
 }
 
@@ -237,58 +218,10 @@ p {
   animation-fill-mode: forwards;
   animation-delay: .9s;
 }
-@keyframes pincrease {
-    100% {
-        width: 55%;
-    }
-}
-
-.scroll_p {
-    margin: 10px;
-}
-
-.scrollbox {
-  float: left;
-  margin-left: 30px;
-  padding: 5px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 25%;
-  height: 295px;
-  border: solid 3px;
-  border-color: chartreuse;
-  color: chartreuse;
-}
-
-.scrollbox::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
-}
-
-/* width */
-.scrollbox::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-.scrollbox::-webkit-scrollbar-track {
-  background: black; 
-}
- 
-/* Handle */
-.scrollbox::-webkit-scrollbar-thumb {
-  border: solid 1px;
-  border-color: black;
-  background: chartreuse; 
-}
-
-/* Handle on hover */
-.scrollbox::-webkit-scrollbar-thumb:hover {
-  background: chartreuse; 
-}
 
 .scene--cube {
-  width: 100px;     /*size*/
-  height: 100px;    /*size*/
+  width: 100px;     
+  height: 100px;    
   margin: 80px 0;
   perspective: 500px;
 }
@@ -352,15 +285,12 @@ p {
 .cube__face--top    { transform: rotateX( 90deg) translateZ(25px); }  /*size*/
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(25px); }  /*size*/
 
-
-
-/*--------------------- GLITCH EFFECT START -----------------------*/
-
 @import "compass/css3";
 body {
   background: black;
   font-family: 'Varela', sans-serif;
 }
+
 .glitch {
   color: chartreuse;
   font-size: 100px;
@@ -368,6 +298,7 @@ body {
   width: 300px;
   margin: 0 auto;
 }
+
 @keyframes noise-anim {
   0% {
     clip: rect(99px, 9999px, 70px, 0);
@@ -433,6 +364,7 @@ body {
     clip: rect(84px, 9999px, 6px, 0);
   }
 }
+
 .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -445,6 +377,7 @@ body {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
+
 @keyframes noise-anim-2 {
   0% {
     clip: rect(52px, 9999px, 76px, 0);
@@ -526,45 +459,8 @@ body {
 }
 
 
-/*--------------------- GLITCH EFFECT END -------------------------*/
-/*
-.line {
-  height:0px;
-  width:0px;
-  border-bottom:3px solid chartreuse;
-  -webkit-animation: increase 3s infinite;
-  -moz-animation:    increase 3s infinite; 
-  -o-animation:      increase 3s infinite; 
-  animation:         increase 3s infinite; 
-  animation-fill-mode: forwards;
-}
 
-.line: after{
-  content: '';
-  height:0px;
-  width:1px;
-  border-bottom:3px solid chartreuse;
-  -webkit-animation: decrease 3s infinite ease-in-out;
-  -moz-animation:    decrease 3s infinite ease-in-out; 
-  -o-animation:      decrease 3s infinite ease-in-out; 
-  animation:         decrease 3s infinite ease-in-out; 
-  animation-fill-mode: backwards ;
-}
-
-@keyframes increase {
-    50% {
-        width: 300px;
-    }
-}
-
-@keyframes decrease {
-    50% {
-        width: 300px;
-    }
-}
-
-*/
-
+/* music player css */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
